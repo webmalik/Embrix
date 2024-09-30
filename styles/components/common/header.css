@@ -1,64 +1,62 @@
-.header{
+.header {
     background-color: black;
     color: white;
     padding: 17px 0;
 }
 
-.header__container{
+.header__container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.header__menu{
+.header__menu {
 }
 
-.menu{
-
+.menu {
 }
 
-.menu__list{
+.menu__list {
     display: flex;
     align-items: center;
-    gap: 32px
+    gap: 32px;
 }
 
-.header__logo{
+.header__logo {
     margin-left: 191px;
     width: 64px;
     height: 64px;
 }
 
-.header__cart{
+.header__cart {
     margin-left: auto;
 }
 
-.header__button .button__name{
+.header__button .button__name {
     padding: 11px 20px;
+    color: #fff;
 }
 
-.header__button .button__icon{
+.header__button .button__icon {
     padding: 16px;
 }
 
-.header__button .button__icon img{
+.header__button .button__icon img {
     width: 10px;
     height: 10px;
 }
 
-
 .header__button:hover .button__name,
 .header__button:hover .button__jumper,
-.header__button:hover .button__icon{
+.header__button:hover .button__icon {
     background-color: var(--pink-main);
 }
 
-
-.header__cart .button__icon{
+.header__cart .button__icon {
     padding: 11px 10px;
 }
 
-.header__cart .button__icon img{
+.header__cart .button__icon img {
     width: 20px;
     height: 20px;
 }

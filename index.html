@@ -14,10 +14,15 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/components/common/button.css">
     <link rel="stylesheet" href="styles/components/common/header.css">
+    <link rel="stylesheet" href="styles/components/common/header-mobile.css">
     <link rel="stylesheet" href="styles/components/main-page/hero.css">
+    <link rel="stylesheet" href="styles/components/main-page/hero-mobile.css">
     <link rel="stylesheet" href="styles/components/main-page/show.css">
+    <link rel="stylesheet" href="styles/components/main-page/show-mobile.css">
     <link rel="stylesheet" href="styles/components/main-page/refresh.css">
+    <link rel="stylesheet" href="styles/components/main-page/refresh-mobile.css">
     <link rel="stylesheet" href="styles/components/main-page/benefits.css">
+    <link rel="stylesheet" href="styles/components/main-page/benefits-mobile.css">
     <link rel="stylesheet" href="styles/components/main-page/reviews.css">
     <link rel="stylesheet" href="styles/components/main-page/organic.css">
     <link rel="stylesheet" href="styles/components/main-page/about-us.css">
@@ -29,8 +34,17 @@
         <header class="header">
             <div class="header__container _container">
                 <nav class="menu header__menu">
+					<div class="header__head-mobile">
+						<span>menu</span>
+						<a href="#" class="header__close">
+							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="2" width="16.9702" height="2.82837" transform="rotate(45 2 0)" fill="black" />
+								<rect width="16.9702" height="2.82837" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 2 14)" fill="black" />
+							</svg>
+						</a>
+					</div>
                     <ul class="menu__list">
-                        <li class="menu__item">
+                        <li class="menu__item dropdown">
                             <a href="" class="header__button button">
                                 <p class="button__name">
                                     Shop
@@ -41,7 +55,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="menu__item">
+                        <li class="menu__item dropdown">
                             <a href="" class="header__button button">
                                 <p class="button__name">
                                     learn
@@ -66,23 +80,31 @@
                                 </p>
                             </a>
                         </li>
-                       
-
                     </ul>
+					<div class="header__footer-mobile">
+						Feeling worn out?
+						<span>Let's change that!</span>
+					</div>
                 </nav>
+				<div class="header__burger">
+					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="12.4736" y="13.1938" width="6.41667" height="6.41667" stroke="#FF18B2" stroke-width="1.26667" stroke-linecap="square" />
+						<rect x="2.39062" y="13.1938" width="6.41667" height="6.41667" stroke="#FF18B2" stroke-width="1.26667" stroke-linecap="square" />
+						<rect x="2.39062" y="3.11084" width="6.41667" height="6.41667" stroke="#FF18B2" stroke-width="1.26667" stroke-linecap="square" />
+						<rect x="12.4736" y="3.11084" width="6.41667" height="6.41667" stroke="#FF18B2" stroke-width="1.26667" stroke-linecap="square" />
+					</svg>
+				</div>
                 <div class="header__logo">
                     <img src="./images/common/header/logo.svg" alt="">
                 </div>
                 <button href="" class="header__button header__cart button">
-                    
-                        <p class="button__name">
-                            Cart
-                        </p>
-                        <div class="button__jumper"></div>
-                        <div class="button__icon">
-                            <img src="./images/common/header/cart-icon.svg" alt="">
-                        </div>
-                    
+					<p class="button__name">
+						Cart
+					</p>
+					<div class="button__jumper"></div>
+					<div class="button__icon">
+						<img src="./images/common/header/cart-icon.svg" alt="">
+					</div>
                 </button>
             </div>
         </header>
@@ -204,45 +226,47 @@
             <section class="benefits">
                 <div class="benefits__container _container">
                     <h2 class="benefits__heading">
-                        Benef ts
                         <img src="./images/main-page/benefits/heading-mushroom.svg" alt="">
                     </h2>
                     <p class="benefits__subheading">from shrooms</p>
-                    <div class="benefits__items">
-                        <div class="benefits__item">
-                                <p class="benefits__effect">
-                                    Boosted Energy
-                                </p>
-                                <div class="benefits__image">
-                                    <img src="./images/main-page/benefits/benefits-image-1.png" alt="">
-                                </div>
-                                <p class="benefits__description">
-                                    Relaxed nervous system and quality sleep
-                                </p>
-                        </div>
-                        <div class="benefits__item">
-                            <p class="benefits__effect">
-                                Boosted Energy
-                            </p>
-                            <div class="benefits__image">
-                                <img src="./images/main-page/benefits/benefits-image-2.png" alt="">
-                            </div>
-                            <p class="benefits__description">
-                                Relaxed nervous system and quality sleep
-                            </p>
-                    </div>
-                    <div class="benefits__item">
-                        <p class="benefits__effect">
-                            Boosted Energy
-                        </p>
-                        <div class="benefits__image">
-                            <img src="./images/main-page/benefits/benefits-image-3.png" alt="">
-                        </div>
-                        <p class="benefits__description">
-                            Relaxed nervous system and quality sleep
-                        </p>
-                </div>
-                    </div>
+					<div class="benefits__slider swiper">
+						<div class="benefits__items swiper-wrapper">
+							<div class="benefits__item swiper-slide">
+								<p class="benefits__effect">
+									Boosted Energy
+								</p>
+								<div class="benefits__image">
+									<img src="./images/main-page/benefits/benefits-image-1.png" alt="">
+								</div>
+								<p class="benefits__description">
+									Relaxed nervous system and quality sleep
+								</p>
+							</div>
+							<div class="benefits__item swiper-slide">
+								<p class="benefits__effect">
+									Boosted Energy
+								</p>
+								<div class="benefits__image">
+									<img src="./images/main-page/benefits/benefits-image-2.png" alt="">
+								</div>
+								<p class="benefits__description">
+									Relaxed nervous system and quality sleep
+								</p>
+							</div>
+							<div class="benefits__item swiper-slide">
+								<p class="benefits__effect">
+									Boosted Energy
+								</p>
+								<div class="benefits__image">
+									<img src="./images/main-page/benefits/benefits-image-3.png" alt="">
+								</div>
+								<p class="benefits__description">
+									Relaxed nervous system and quality sleep
+								</p>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
                 </div>
             </section>
             <section class="reviews">
@@ -475,6 +499,8 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/common/header.js"></script>
+    <script src="./scripts/main-page/benefits-swiper.js"></script>
     <script src="./scripts/main-page/reviews-swiper.js"></script>
 </body>
 </html>
